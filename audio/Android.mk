@@ -22,6 +22,8 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := audio_hw.c ril_interface.c
 
+LOCAL_CFLAGS += -fno-strict-aliasing
+
 LOCAL_C_INCLUDES += \
 	external/tinyalsa/include \
 	external/expat/lib \
